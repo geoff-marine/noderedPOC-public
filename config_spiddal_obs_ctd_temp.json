@@ -3,7 +3,7 @@
         "qartod": {
             "gross_range_test": {
                "fail_span": [-6, 27],
-               "suspect_span": [0, 20]
+               "suspect_span": [1, 20]
            },
             "climatology_test": {
                 "config": [
