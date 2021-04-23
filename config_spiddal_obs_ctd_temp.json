@@ -1,0 +1,58 @@
+{
+    "SmartBay": {
+        "qartod": {
+            "gross_range_test": {
+               "fail_span": [-5, 27],
+               "suspect_span": [0, 20]
+           },
+            "climatology_test": {
+                "config": [
+                    {
+                        "vspan": [10, 13],
+                        "tspan": [1, 3],
+                        "period": "month",
+                        "zspan": [0, 100]
+                    },
+                    {
+                        "vspan": [11, 14],
+                        "tspan": [4, 6],
+                        "period": "month",
+                        "zspan": [0, 100]
+                    },
+                    {
+                        "vspan": [13, 17],
+                        "tspan": [7, 9],
+                        "period": "month",
+                        "zspan": [0, 100]
+                    },
+                    {
+                        "vspan": [12, 16],
+                        "tspan": [4, 12],
+                        "period": "month",
+                        "zspan": [0, 100]
+                    }
+                ]
+            },
+            "flat_line_test": {
+                "tolerance": 0.0005,
+                "suspect_threshold": 5000,
+                "fail_threshold": 30000
+            },
+            "rate_of_change_test": {
+                "threshold": 0.001
+            },
+            "spike_test": {
+                "suspect_threshold": 3,
+                "fail_threshold": 8
+            },
+            "attenuated_signal_test": {
+                "suspect_threshold": 0.0001,
+                "fail_threshold": 0.00005,
+                "check_type": "std",
+                "test_period": 120,
+                "min_period": 60
+            },
+            "aggregate": {}
+        }
+    }
+}
