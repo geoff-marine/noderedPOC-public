@@ -2,7 +2,7 @@
     "SmartBay": {
         "qartod": {
             "gross_range_test": {
-               "fail_span": [-4, 27],
+               "fail_span": [-2, 27],
                "suspect_span": [1, 20]
            },
             "climatology_test": {
